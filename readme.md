@@ -161,7 +161,7 @@ This model is trained using the [open source TensorFlow implementation](https://
 > ./hmc.sh  
 
 1. Start FaceNet Plug-in (Optional)
-> cd tf_serving  
+> cd /opt/tf_serving  
 > ./run_facenet.sh  
 
 ![labeled_faces_01.jpg](https://github.com/scotthong/hmc-media-server/blob/master/images/labeled_faces_01.jpg)
