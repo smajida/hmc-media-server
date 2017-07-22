@@ -152,6 +152,10 @@ This model is trained using the [open source TensorFlow implementation](https://
 |--------------------------------------------|----------------|--------------------------------|--------|--------|
 | [LFW Validation Report][lfw_report_01]     | 0.9968+-0.0027 | 0.99333+-0.00667 @ FAR=0.00100 | 0.9997 | 0.0039 |
 
+#### Trained with MS-Celeb-1M
+This FaceNet Model is trained with MS-Celeb-1M dataset and is for **Non-Commercial Use Only** according to the
+[Microsoft Research License Agreement](http://msceleb.blob.core.windows.net/ms-celeb-v1-split/MSR_LA_Data_MSCeleb_IRC.pdf).
+
 ## Using HMC Media Server
 
 ### Start HMC Media Server
