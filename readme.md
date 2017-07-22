@@ -1,12 +1,12 @@
 HMC Media Server
 ================
-[![Join the chat at https://gitter.im/hmcmediaserver/hmcmediaserver](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hmcmediaserver/deeplearning4j?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Join the chat at https://gitter.im/hmcmediaserver/lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hmcmediaserver/lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [HMC Media Server] is trying to solve a very fundamental problem most of us are facing.
 
 > How do I organize my own media files using a software that offers similiar features as these provided by the cloud based services? 
 
-We keep our media files created using various devices and upload some of them to the cloud based services usch as Flickr, Google Photos, Facebook or Amazon Prime Photo. The media files are then locked away stored in the storage devices that rarely get accessed.
+We keep our media files created using various devices and upload some of them to the cloud based services usch as Flickr, Google Photos, Facebook or Amazon Prime Photo. The media files are usually locked away stored in the storage devices that rarely get accessed.
 
 [HMC Media Server] will unlock these media files (photos, audios and videos) so that you can enjoy the media files inside you home with high speed network. The application also supports Apple TV and Chromecast that you can stream your media files to your big screens.
 
@@ -152,13 +152,25 @@ This model is trained using the [open source TensorFlow implementation](https://
 |--------------------------------------------|----------------|--------------------------------|--------|--------|
 | [LFW Validation Report][lfw_report_01]     | 0.9968+-0.0027 | 0.99333+-0.00667 @ FAR=0.00100 | 0.9997 | 0.0039 |
 
-## Start [HMC Media Server]
-1. Change to the **hmc** directory where **HMC Media Server** is installed. 
+## Using HMC Media Server
+
+### Start HMC Media Server
+
+1. Open a console and change to the **hmc** directory where the **[HMC Media Server]** is installed. For example **/opt/hmc**
+> cd /opt/hmc
 > ./hmc.sh  
 
 1. Start FaceNet Plug-in (Optional)
 > cd tf_serving  
 > ./run_facenet.sh  
+
+![labeled_faces_01.jpg](https://github.com/scotthong/hmc-media-server/blob/master/images/labeled_faces_01.jpg)
+![imageEditor_with_facechips_01.jpg](https://github.com/scotthong/hmc-media-server/blob/master/images/imageEditor_with_facechips_01.jpg)
+
+### Quick Start Guide
+Please refer to the [HMC Media Server Quick Start Guide] page for the guides on previous releases.
+
+Updated guides to be completed...
 
 ## License
 
@@ -178,5 +190,6 @@ This model is trained using the [open source TensorFlow implementation](https://
   limitations under the License.
 ```
 
-[lfw_report_01]: https://github.com/scotthong/hmc-media-server/blob/master/lfw/lfw_report_01.html
-[HMC Media Server]: http://www.homemediacenter.org
+
+[HMC Media Server]: http://homemediacenter.org
+[HMC Media Server Quick Start Guide]: http://homemediacenter.org/#/support/quickStart#top
