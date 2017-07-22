@@ -2,7 +2,7 @@ HMC Media Server
 ================
 [![Join the chat at https://gitter.im/hmcmediaserver/lobby](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hmcmediaserver/lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[HMC Media Server] is trying to solve a very fundamental problem most of us are facing.
+[HMC Media Server] is designed to solve a very fundamental problem most of us are facing.
 
 > How do I organize my own media files using a software that offers similiar features as these provided by the cloud based services? 
 
@@ -157,7 +157,7 @@ This model is trained using the [open source TensorFlow implementation](https://
 ### Start HMC Media Server
 
 1. Open a console and change to the **hmc** directory where the **[HMC Media Server]** is installed. For example **/opt/hmc**
-> cd /opt/hmc
+> cd /opt/hmc  
 > ./hmc.sh  
 
 1. Start FaceNet Plug-in (Optional)
