@@ -144,7 +144,7 @@ Please refer to [How to Install FFmpeg on CentOS](https://www.vultr.com/docs/how
 > ./hmc.sh  
 
 1. Start FaceNet Plug-in (Optional) 
-> cd /opt/tf_serving  
+> cd /opt/hmc/tf_serving  
 > ./run_facenet.sh  
 
 ![labeled_faces_01.jpg](https://github.com/scotthong/hmc-media-server/blob/master/images/labeled_faces_01.jpg)
