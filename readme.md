@@ -21,8 +21,8 @@ We keep our media files created using various devices and upload some of them to
 ## Download Links
 **[HMC Media Server]** is a Java based web application to help manage your media libraries.
 
-* HMC Media Server for Unix/Linux/OSX: [hmc-1.3.0-RELEASE.tar.gz](https://drive.google.com/uc?id=1ZvD4rohx1rvu5sIqv_dvTiNJavMCS1WO&export=download)
-* HMC Media Server for Windows: [hmc-1.3.0-RELEASE.zip](https://drive.google.com/uc?id=1wm_CYkVCuImYm0OPaoUjfcQjYYa9xM0j&export=download)
+* HMC Media Server for Unix/Linux/OSX: 
+* HMC Media Server for Windows: 
 
 ## Install Native Software Dependencies
 
