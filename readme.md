@@ -21,9 +21,8 @@ We keep our media files created using various devices and upload some of them to
 ## Download Links
 **[HMC Media Server]** is a Java based web application to help manage your media libraries.
 
-* HMC Media Server for Unix/Linux/OSX: [hmc-1.3.0-BETA1.tar.gz](https://drive.google.com/file/d/0B3yQIDinGlTfcFN4MmhKVHFlX2c/view?usp=sharing)
-* HMC Media Server for Windows: [hmc-1.3.0-BETA1.zip](https://drive.google.com/file/d/0B3yQIDinGlTfTXYxaGZ2cGwwZ00/view?usp=sharing)
-* [FaceNet Plug-in (Linux/OSX)](#facenet): [tf_serving-1.0.0-BETA1.tar.gz](https://drive.google.com/file/d/0B3yQIDinGlTfcFZsU2dTTUdhenM/view?usp=sharing)). This package has been tested under Ubuntu 16.04, Ubuntu 14.04, CentOS 7 and Mac/OSX. The Windows platform is not supported natively. Alternatively, you can install the FaceNet Plug-in as a remote service hosted by a supported OS natively or as a VM.
+* HMC Media Server for Unix/Linux/OSX: [hmc-1.3.0-RELEASE.tar.gz](https://drive.google.com/uc?id=1ZvD4rohx1rvu5sIqv_dvTiNJavMCS1WO&export=download)
+* HMC Media Server for Windows: [hmc-1.3.0-RELEASE.zip](https://drive.google.com/uc?id=1wm_CYkVCuImYm0OPaoUjfcQjYYa9xM0j&export=download)
 
 ## Install Native Software Dependencies
 
