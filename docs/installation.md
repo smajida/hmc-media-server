@@ -12,7 +12,6 @@ HMC Media Server
 
 > How do I organize my own media files using a software that offers similiar features as these provided by the cloud based services? 
 
-
 We keep our media files created using various devices and upload some of them to the cloud based services usch as Flickr, Google Photos, Facebook or Amazon Prime Photo. The media files are usually locked away stored in the storage devices that rarely get accessed.
 
 [HMC Media Server] will unlock these media files (photos, audios and videos) so that you can enjoy the media files inside you home with high speed network. The application also supports Apple TV and Chromecast that you can stream your media files to your big screens.
@@ -135,6 +134,38 @@ Please refer to [How to Install FFmpeg on CentOS](https://www.vultr.com/docs/how
     * Install FFmpeg and FFmpeg development packages
     > sudo yum install ffmpeg ffmpeg-devel -y  
 
+## Optional Plug-in
+
+### <a name="facenet"></a>FaceNet Plug-in
+
+
+1. Download [FaceNet Plug-in (Linux/OSX)](#facenet): [tf_serving-1.0.0-BETA1.tar.gz](https://drive.google.com/file/d/0B3yQIDinGlTfcFZsU2dTTUdhenM/view?usp=sharing).
+
+1. Unpack **tf_serving-1.0.0-BETA1.tar.gz** to the target directory. For example **/opt/tf_serving**
+
+1. Start **FaceNet** service
+> cd /opt/tf_serving
+> ./run_facenet.sh  
+
+#### FaceNet Model
+
+This is a pre-trained inception resnet_v1 TensorFlow model based on the face recognizer as described in the paper. This model can be used to generate face embedding for face recognition and clustering.
+
+  [FaceNet: A Unified Embedding for Face Recognition and Clustering](https://arxiv.org/abs/1503.03832)
+
+This model is trained using the [open source TensorFlow implementation](https://github.com/davidsandberg/facenet) of the paper. This model is validated using the LFW dataset and the best result is provided below.
+
+| Report Link                                |    Accuracy    |         Validation Rate        |  AUC   |  EER   |
+|--------------------------------------------|----------------|--------------------------------|--------|--------|
+| [LFW Validation Report][lfw_report_01]     | 0.9968+-0.0027 | 0.99333+-0.00667 @ FAR=0.00100 | 0.9997 | 0.0039 |
+
+#### TensorFlow Pre-trained Model
+Download link for the pre-trained model: [facenet_213250_20170620.pb](https://drive.google.com/uc?id=0B3yQIDinGlTfR1FseTcxWWxMaTQ&export=download)
+
+#### Network Trained with MS-Celeb-1M
+This FaceNet Model is trained with MS-Celeb-1M dataset and is for **Non-Commercial Use Only** according to the
+[Microsoft Research License Agreement](http://msceleb.blob.core.windows.net/ms-celeb-v1-split/MSR_LA_Data_MSCeleb_IRC.pdf).
+
 ## Using HMC Media Server
 
 ### Start HMC Media Server
@@ -154,24 +185,3 @@ Please refer to [How to Install FFmpeg on CentOS](https://www.vultr.com/docs/how
 Please refer to the [HMC Media Server Quick Start Guide] page for the guides on previous releases.
 
 Updated guides to be completed...
-
-## License
-
-```
-  Copyright 2015-2017 HMC Technologies LLC
-
-  Licensed under the Creative Commons Attribution-ShareAlike 3.0 
-  Unported License (the "License"); you may not use this application except
-  in compliance with the License. You may obtain a copy of the License at
-
-  http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode  
-
-  Unless required by applicable law or agreed to in writing, software
-  distributed under the License is distributed on an "AS IS" BASIS,
-  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  See the License for the specific language governing permissions and
-  limitations under the License.
-```
-
-[HMC Media Server]: http://homemediacenter.org
-[HMC Media Server Quick Start Guide]: http://homemediacenter.org/#/support/quickStart#top
